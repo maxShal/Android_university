@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">num_27</string>
+    <string name="action_open">открыть</string>
+    <string name="action_save">сохранить</string>
+</resources>

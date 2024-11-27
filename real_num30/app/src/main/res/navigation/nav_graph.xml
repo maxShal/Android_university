@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <navigation
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/startFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <fragment
+            android:id="@+id/startFragment"
+            android:name="com.example.real_num30.StartFragment"
+            android:label="fragment_start"
+            tools:layout="@layout/fragment_start" >
+            <action
+                android:id="@+id/action_startFragment_to_messageFragment"
+                app:destination="@id/messageFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/messageFragment"
+            android:name="com.example.real_num30.MessageFragment"
+            android:label="fragment_message"
+            tools:layout="@layout/fragment_message" >
+            <action
+                android:id="@+id/action_messageFragment_to_converterFragment"
+                app:destination="@id/converterFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/converterFragment"
+            android:name="com.example.real_num30.ConverterFragment"
+            android:label="fragment_converter"
+            tools:layout="@layout/fragment_converter" >
+            <argument
+                android:name="massage"
+                app:argType="string" />
+        </fragment>
+    </navigation>
